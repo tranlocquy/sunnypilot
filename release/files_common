@@ -36,7 +36,6 @@ common/filter_simple.py
 common/stat_live.py
 common/spinner.py
 common/text_window.py
-common/cython_hacks.py
 common/SConscript
 
 common/kalman/.gitignore
@@ -306,6 +305,8 @@ selfdrive/loggerd/omx_encoder.h
 selfdrive/loggerd/logger.cc
 selfdrive/loggerd/logger.h
 selfdrive/loggerd/loggerd.cc
+selfdrive/loggerd/loggerd.h
+selfdrive/loggerd/main.cc
 selfdrive/loggerd/bootlog.cc
 selfdrive/loggerd/raw_logger.cc
 selfdrive/loggerd/raw_logger.h
@@ -366,8 +367,6 @@ selfdrive/camerad/snapshot/*
 selfdrive/camerad/include/*
 selfdrive/camerad/cameras/camera_common.h
 selfdrive/camerad/cameras/camera_common.cc
-selfdrive/camerad/cameras/camera_frame_stream.cc
-selfdrive/camerad/cameras/camera_frame_stream.h
 selfdrive/camerad/cameras/camera_qcom.cc
 selfdrive/camerad/cameras/camera_qcom.h
 selfdrive/camerad/cameras/camera_replay.cc
@@ -443,9 +442,6 @@ selfdrive/assets/sounds/*
 selfdrive/assets/training/*
 
 third_party/SConscript
-
-third_party/nanovg/*.c
-third_party/nanovg/*.h
 
 third_party/libgralloc/**
 third_party/linux/**
@@ -588,6 +584,7 @@ opendbc/nissan_x_trail_2017.dbc
 opendbc/nissan_leaf_2018.dbc
 
 opendbc/subaru_global_2017_generated.dbc
+opendbc/subaru_global_2020_hybrid_generated.dbc
 opendbc/subaru_outback_2015_generated.dbc
 opendbc/subaru_outback_2019_generated.dbc
 opendbc/subaru_forester_2017_generated.dbc
